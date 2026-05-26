@@ -1,0 +1,55 @@
+@font-face {
+	font-family: 'CodePage437';
+	src: url('/format/cp437ex.ttf') format('truetype');	
+}
+
+body {
+	background-color:#FFFFFF;
+	color:#000000;
+	text-decoration:none;
+	font-family:'CodePage437';
+	
+}
+
+iframe {
+	border:0;
+	outline:none;
+	height:30px;
+}
+
+a:link, a:visited {
+	color:#AA00AA !important;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#555FF !important;
+	text-decoration:none !important;
+}
+
+a:active{
+	color:#0000AA !important;
+	text-decoration:none !important;
+}
+
+/*
+DOS COLOR HEX CODE REFERENCE:
+	DARK COLORS:
+		BLACK:      #000000
+		DK-BLUE:    #0000AA
+		DK-TRQS:    #00AAAA
+		DK-GREEN:   #00AA00
+		DK-MGNTA:   #AA00AA
+		DK-RED:     #AA0000
+		ORNG/BRWN:  #AA5500
+		LT-GREY:    #AAAAAA
+	LIGHT COLORS:	
+		DK-GREY:    #555555
+		LT-BLUE:    #5555FF
+		LT-TRQS:    #55FFFF
+		LT-GREEN:   #55FF55
+		LT-MGNTA:   #FF55FF
+		LT-RED:     #FF5555
+		YELLOW:     #FFFF55
+		WHITE:      #FFFFFF
+*/
