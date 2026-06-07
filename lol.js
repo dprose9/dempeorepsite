@@ -1,1 +1,0 @@
-document.getElementById("urmomid").src = "lol.htm";
