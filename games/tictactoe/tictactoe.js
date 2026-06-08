@@ -1,6 +1,6 @@
 function tictactoeFunc() {
 	document.getElementById("tictactoeid").innerHTML = `<body>
-									<p style="display:flex; text-align:center;">
+									<p style="display:block; text-align:center; margin:0;">
 										<img src="/games/tictactoe/tttBs.png" alt=":)" width="50%" height="50%">
 										<img src="/games/tictactoe/tttBh.png" alt=":)" width="50%" height="50%">
 										<img src="/games/tictactoe/tttVs.png" alt=":)" width="50%" height="50%">
