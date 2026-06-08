@@ -1,6 +1,6 @@
 function tictactoeFunc() {
 	document.getElementById("tictactoeid").innerHTML = `<body>
-									<div style="display:flex; text-align:center;">
+									<p style="display:flex; text-align:center;">
 										<img src="/games/tictactoe/tttBs.png" alt=":)" width="50%" height="50%">
 										<img src="/games/tictactoe/tttBh.png" alt=":)" width="50%" height="50%">
 										<img src="/games/tictactoe/tttVs.png" alt=":)" width="50%" height="50%">
@@ -25,7 +25,7 @@ function tictactoeFunc() {
 										<img src="/games/tictactoe/tttH.png" alt=":)" width="50%" height="50%">
 										<img src="/games/tictactoe/tttHs.png" alt=":)" width="50%" height="50%"><br>
 										
-									</div>
+									</p>
 								</body>`
 								
 	document.getElementById("tictactoebutt").innerHTML = "Reset Tic Tac Toe";
