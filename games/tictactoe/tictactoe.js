@@ -133,6 +133,20 @@ function tttOFunc(tttID) {
 	
 	tttStat[x][y] = "O";
 	tttWinFunc("O");
+	tttXFunc();
+}
+
+function tttXFunc() {
+	let xID = "ttt";
+	for (let i = 0; i<3; i++) {
+		for (let j = 0; j<3; j++) {
+			if (tttStat[i][j] != "O" && tttStat[i][j] != "X") {
+				xID = "ttt" + i + j;
+				document.getElementById(blankst).innerHTML = `<img src="/games/tictactoe/tttX.png" alt="X">`;
+				break;
+			}
+		}
+	}
 }
 
 
@@ -177,6 +191,7 @@ function tttWinFunc(Player) {
 		tttEndFunc(Player);
 		
 	}
+	return 0;
 }
 
 function tttEndFunc(winner) {
