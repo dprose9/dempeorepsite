@@ -30,6 +30,11 @@ function tictactoePick() {
 					background-image:url(/games/tictactoe/tttOw.gif);
 				}
 			</style>
+			<p style="font-size:100px;">
+				<span style="color:#AA0000;">TIC </span>
+				<span style="color:#0000AA;">TAC </span>
+				<span style="color:#000000;">TOE </span>
+			</p>
 			<p style="font-size:40px; text-align:center;">
 				Pick a character:<br>
 			
