@@ -137,10 +137,14 @@ function tttOFunc(tttID) {
 }
 
 function tttXFunc() {
+	let x = 0;
+	let y = 0;
 	let xID = "ttt";
 	for (let i = 0; i<3; i++) {
 		for (let j = 0; j<3; j++) {
 			if (tttStat[i][j] != "O" && tttStat[i][j] != "X") {
+				x = i;
+				y = j;
 				xID = "ttt" + i + j;
 				document.getElementById(xID).innerHTML = `<img src="/games/tictactoe/tttX.png" alt="X">`;
 				i = 3;
@@ -148,6 +152,9 @@ function tttXFunc() {
 			}
 		}
 	}
+	tttStat[x][y] = "X";
+	tttWinFunc("X");
+	return 0;
 }
 
 
