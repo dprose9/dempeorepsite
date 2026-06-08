@@ -142,7 +142,7 @@ function tttXFunc() {
 		for (let j = 0; j<3; j++) {
 			if (tttStat[i][j] != "O" && tttStat[i][j] != "X") {
 				xID = "ttt" + i + j;
-				document.getElementById(blankst).innerHTML = `<img src="/games/tictactoe/tttX.png" alt="X">`;
+				document.getElementById(xID).innerHTML = `<img src="/games/tictactoe/tttX.png" alt="X">`;
 				break;
 			}
 		}
