@@ -1,13 +1,13 @@
 function tictactoeFunc() {
 	document.getElementById("tictactoeid").innerHTML = `<body>
-									<p style="font-size:40px; text-align:center;">
-										&nbsp&nbsp&nbsp&nbsp╷&nbsp&nbsp&nbsp╷&nbsp&nbsp&nbsp&nbsp<br>
-										&nbsp&nbsp&nbsp&nbsp│&nbsp&nbsp&nbsp│&nbsp&nbsp&nbsp&nbsp<br>
-										╶───┼───┼───╴<br>
-										&nbsp&nbsp&nbsp&nbsp│<img src="/games/tictactoe/tttX.png" alt="X" width="40px">│&nbsp&nbsp&nbsp&nbsp<br>
-										╶───┼───┼───╴<br>
-										&nbsp&nbsp&nbsp&nbsp│&nbsp&nbsp&nbsp│&nbsp&nbsp&nbsp&nbsp<br>
-										&nbsp&nbsp&nbsp&nbsp╵&nbsp&nbsp&nbsp╵&nbsp&nbsp&nbsp&nbsp<br>
+									<p style="text-align:center;">
+										<img src="/games/tictactoe/tttBs.png" alt=":)">
+										<img src="/games/tictactoe/tttBh.png" alt=":)">
+										<img src="/games/tictactoe/tttVs.png" alt=":)">
+										<img src="/games/tictactoe/tttBh.png" alt=":)">
+										<img src="/games/tictactoe/tttVs.png" alt=":)">
+										<img src="/games/tictactoe/tttBh.png" alt=":)">
+										<img src="/games/tictactoe/tttBs.png" alt=":)">
 										
 									</p>
 								</body>`
