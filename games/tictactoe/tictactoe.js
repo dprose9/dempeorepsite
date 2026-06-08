@@ -200,7 +200,7 @@ function tttWinFunc(Player) {
 		winIDs[2] = "ttt" + 2 + 0;
 		tttEndFunc(Player);
 		
-	} else {
+	}
 }
 
 function tttEndFunc(winner) {
