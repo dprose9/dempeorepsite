@@ -9,7 +9,7 @@ function boomFunc() {
 					<title>BOOM!!!!!!!</title>
 				</head>
 				<body style="background-color:#AA0000;">
-					<p style="color:#FFFF55; background-color:#AA5500; font-size:200px; text-align:center;">
+					<p style="color:#FFFF55; background-color:#AA5500; font-size:200px; line-height:100px; text-align:center;">
 						BOOM!
 					</p>
 					<p style="color:#FFFFFF; font-size:20px; text-align:center;">
