@@ -3,20 +3,19 @@ const tttStat = [
 		["N4", "N5", "N6"],
 		["N7", "N8", "N9"]
 		];
-let win = "A";
 
 const winIDs = ["ID", "ID", "ID"];
 
 
 function tictactoeFunc() {
+	let k = 0
 	for (let i = 0; i<3; i++) {
 		winIDs[i] = "ID";
 		for (let j = 0; j<3; j++) {
-			tttStat[i][j] = "N" + i;
+			k++
+			tttStat[i][j] = "N" + k;
 		}
 	}
-	
-	win = "A";
 	
 	document.getElementById("tictactoeid").innerHTML = 
 		`<body>
