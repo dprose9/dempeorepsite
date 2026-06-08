@@ -19,6 +19,13 @@ button {
 	font-size:30px;
 }
 
+button.pic {
+	background-color:#FFFFFF;
+	color:#FFFFFF;
+	text-decoration:none;
+	border:none;
+}
+
 button:hover {
 	background-color:#FFFFFF;
 	color:#000000;

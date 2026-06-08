@@ -13,7 +13,7 @@ function tictactoeFunc() {
 			<div style="display:flex; justify-content:center;">	
 				<img src="/games/tictactoe/tttBv.png" alt=":)">
 				<span  id="ttt11">
-					<button onclick="tttOFunc()">
+					<button class="pic" onclick="tttOFunc()">
 						<img src="/games/tictactoe/tttB.png" alt="?">
 					</button>
 				</span>
