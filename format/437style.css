@@ -45,6 +45,27 @@ button:hover.pic {
 	padding:0px;
 }
 
+
+
+button.normal {
+	background-color:#AAAAAA;
+	color:#000000;
+	text-decoration:none;
+	font-family:'CodePage437';
+	font-size:30px;
+}
+button:hover.normal {
+	display:none;
+}
+button.hover {
+	display:none;
+}
+button:hover.hover {
+	display:inline;
+}
+
+
+
 iframe {
 	border:0;
 	outline:none;

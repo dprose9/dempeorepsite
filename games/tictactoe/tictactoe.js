@@ -17,10 +17,13 @@ function tictactoePick() {
 				Pick a character:
 			</p>
 			<button style="color:#AA0000; font-size:100px;" onclick="playerchar = 1; tictactoeFunc();">
-				X
+				<img class="normal" src="/games/tictactoe/tttX.png" alt="X">
+				<img class="hover" src="/games/tictactoe/tttO.png" alt="O">
 			</button>
 			<button style="color:#0000AA; font-size:100px;" onclick="playerchar = 0; tictactoeFunc();">
-				O
+				<img class="normal" src="/games/tictactoe/tttO.png" alt="O">
+				<img class="hover" src="/games/tictactoe/tttX.png" alt="X">
+				
 			</button>
 		</body>`
 }
