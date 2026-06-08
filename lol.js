@@ -20,7 +20,7 @@ function boomFunc() {
 						Oops!&nbsp You 'sploded the site...&nbsp Maybe refresh and try again?
 					</p>
 				</body>
-			</html>`)
+			</html>`);
 }
 
 function tictactoeFunc() {
