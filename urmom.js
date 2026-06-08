@@ -1,1 +1,0 @@
-const tictactoehtm = await fetch("/games/tictactoe.htm").then(r => r.text());

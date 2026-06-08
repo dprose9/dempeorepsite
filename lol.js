@@ -1,5 +1,3 @@
-import { tictactoehtm } from '/urmom.js';
-
 function urmomFunc() {
 	document.getElementById("lolorurmom").innerHTML = "URMOM";
 }
@@ -24,6 +22,5 @@ function boomFunc() {
 }
 
 function tictactoeFunc() {
-	document.getElementById("tictactoeid").innerHTML = tictactoehtm;
 	document.getElementById("tictactoebutt").innerHTML = "Reset Tic Tac Toe";
 }
