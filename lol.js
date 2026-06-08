@@ -22,5 +22,6 @@ function boomFunc() {
 }
 
 function tictactoeFunc() {
+	document.getElementById("tictactoeid").innerHTML = "Tic Tac Toe Game";
 	document.getElementById("tictactoebutt").innerHTML = "Reset Tic Tac Toe";
 }
