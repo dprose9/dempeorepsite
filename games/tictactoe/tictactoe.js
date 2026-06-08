@@ -30,10 +30,10 @@ function tictactoePick() {
 					background-image:url(/games/tictactoe/tttOw.gif);
 				}
 			</style>
-			<p style="font-size:100px;">
+			<p style="font-size:100px; line-height:30px; text-align:center;">
 				<span style="color:#AA0000;">TIC </span>
 				<span style="color:#0000AA;">TAC </span>
-				<span style="color:#000000;">TOE </span>
+				<span style="color:#000000;">TOE</span>
 			</p>
 			<p style="font-size:40px; text-align:center;">
 				Pick a character:<br>
@@ -61,10 +61,10 @@ function tictactoeFunc() {
 	
 	document.getElementById("tictactoeid").innerHTML = 
 		`<body>
-			<p style="font-size:100px;">
+			<p style="font-size:100px; line-height:30px; text-align:center;">
 				<span style="color:#AA0000;">TIC </span>
 				<span style="color:#0000AA;">TAC </span>
-				<span style="color:#000000;">TOE </span>
+				<span style="color:#000000;">TOE</span>
 			</p>
 			<div style="display:flex; justify-content:center;">
 				<img src="/games/tictactoe/tttBs.png" alt=":)">
