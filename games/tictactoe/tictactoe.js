@@ -186,14 +186,14 @@ function tttEndFunc(winner) {
 		}
 	}
 	if (winner === "O") {
-		document.getElementById(winIDs[0]).innerHTML = `<img src="/games/tictactoe/tttOw.png" alt="O!">`;
-		document.getElementById(winIDs[1]).innerHTML = `<img src="/games/tictactoe/tttOw.png" alt="O!">`;
-		document.getElementById(winIDs[2]).innerHTML = `<img src="/games/tictactoe/tttOw.png" alt="O!">`;
+		document.getElementById(winIDs[0]).innerHTML = `<img src="/games/tictactoe/tttOw.gif" alt="O!">`;
+		document.getElementById(winIDs[1]).innerHTML = `<img src="/games/tictactoe/tttOw.gif" alt="O!">`;
+		document.getElementById(winIDs[2]).innerHTML = `<img src="/games/tictactoe/tttOw.gif" alt="O!">`;
 	
 	} else if (winner === "X") {
-		document.getElementById(winIDs[0]).innerHTML = `<img src="/games/tictactoe/tttXw.png" alt="X!">`;
-		document.getElementById(winIDs[1]).innerHTML = `<img src="/games/tictactoe/tttXw.png" alt="X!">`;
-		document.getElementById(winIDs[2]).innerHTML = `<img src="/games/tictactoe/tttXw.png" alt="X!">`;
+		document.getElementById(winIDs[0]).innerHTML = `<img src="/games/tictactoe/tttXw.gif" alt="X!">`;
+		document.getElementById(winIDs[1]).innerHTML = `<img src="/games/tictactoe/tttXw.gif" alt="X!">`;
+		document.getElementById(winIDs[2]).innerHTML = `<img src="/games/tictactoe/tttXw.gif" alt="X!">`;
 	}
 	
 }
