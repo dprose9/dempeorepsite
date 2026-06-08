@@ -13,17 +13,15 @@ const winIDs = ["ID", "ID", "ID"];
 function tictactoePick() {
 	document.getElementById("tictactoeid").innerHTML = 
 		`<body>
+			<style>
+				button.xx {
+					background-image:url(/games/tictactoe/tttX.png);
+				}
+			</style>
 			<p style="font-size:40px; text-align:center;">
 				Pick a character:
 			
-				<button class="change" onclick="playerchar = 1; tictactoeFunc();">
-					<span class="normal">
-						<img src="/games/tictactoe/tttX.png" alt="X">
-					</span>
-					<span class="hover">
-						<img src="/games/tictactoe/tttO.png" alt="O">
-					</span>
-				</button>
+				<button class="xx" onclick="playerchar = 1; tictactoeFunc();"></button>
 				<button class="change" onclick="playerchar = 0; tictactoeFunc();">
 					<img class="normal" src="/games/tictactoe/tttO.png" alt="O">
 					<img class="hover" src="/games/tictactoe/tttX.png" alt="X">

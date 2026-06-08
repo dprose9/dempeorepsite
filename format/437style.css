@@ -47,21 +47,6 @@ button:hover.pic {
 
 
 
-.change.normal {
-	display:inline;
-}
-.change:hover.normal {
-	display:none;
-}
-.change.hover {
-	display:none;
-}
-.change:hover.hover {
-	display:inline;
-}
-
-
-
 iframe {
 	border:0;
 	outline:none;
