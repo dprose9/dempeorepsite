@@ -6,6 +6,7 @@ function boomFunc() {
 	document.write(`<html land="en-US">
 				<head>
 					<link rel="stylesheet" href="/format/437style.css">
+					<link rel="icon" sizes="any" href="/icons/faviconexp.ico">
 					<title>BOOM!!!!!!!</title>
 				</head>
 				<body style="background-color:#AA0000;">
