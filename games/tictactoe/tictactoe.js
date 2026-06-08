@@ -134,18 +134,21 @@ function tttWinFunc(Player) {
 		if ((tttStat[i][0] === tttStat[i][1]) &&
 			(tttStat[i][1] === tttStat[i][2])) {
 			
-			win[0] = "ttt" + i + 0;
-			win[1] = "ttt" + i + 1;
-			win[2] = "ttt" + i + 2;
-			
+			winIDs[0] = "ttt" + i + 0;
+			winIDs[1] = "ttt" + i + 1;
+			winIDs[2] = "ttt" + i + 2;
+			win = tttStat[i][0];
+			tttEndFunc(win);
 			
 		}	
 		if ((tttStat[0][i] === tttStat[1][i]) &&
 			(tttStat[1][i] === tttStat[2][i])) {
 			
-			win[0] = "ttt" + 0 + i;
-			win[1] = "ttt" + 1 + i;
-			win[2] = "ttt" + 2 + i;
+			winIDs[0] = "ttt" + 0 + i;
+			winIDs[1] = "ttt" + 1 + i;
+			winIDs[2] = "ttt" + 2 + i;
+			win = tttStat[0][i];
+			tttEndFunc(win);
 			
 		}
 	}
@@ -153,22 +156,26 @@ function tttWinFunc(Player) {
 	if ((tttStat[0][0] === tttStat[1][1]) &&
 		(tttStat[1][1] === tttStat[2][2])) {
 	
-		win[0] = "ttt" + 0 + 0;
-		win[1] = "ttt" + 1 + 1;
-		win[2] = "ttt" + 2 + 2;
+		winIDs[0] = "ttt" + 0 + 0;
+		winIDs[1] = "ttt" + 1 + 1;
+		winIDs[2] = "ttt" + 2 + 2;
+		win = tttStat[0][0];
+		tttEndFunc(win);
 	
 	}
 	if ((tttStat[0][2] === tttStat[1][1]) &&
 		(tttStat[1][1] === tttStat[2][0])) {
 		
-		win[0] = "ttt" + 0 + 2;
-		win[1] = "ttt" + 1 + 1;
-		win[2] = "ttt" + 2 + 0;
+		winIDs[0] = "ttt" + 0 + 2;
+		winIDs[1] = "ttt" + 1 + 1;
+		winIDs[2] = "ttt" + 2 + 0;
+		win = tttStat[0][2];
+		tttEndFunc(win);
 		
 	}
 }
 
-function tttEndFunc() {
+function tttEndFunc(winner) {
 	blankst = "ttt"
 	for (let i = 0; i<3; i++) {
 		for (let j = 0; j<3; j++) {
@@ -178,8 +185,15 @@ function tttEndFunc() {
 			}
 		}
 	}
+	if (winner === "O") {
+		document.getElementById(winIDs[0]).innerHTML = `<img src="/games/tictactoe/tttOw.png" alt="O!">`;
+		document.getElementById(winIDs[1]).innerHTML = `<img src="/games/tictactoe/tttOw.png" alt="O!">`;
+		document.getElementById(winIDs[2]).innerHTML = `<img src="/games/tictactoe/tttOw.png" alt="O!">`;
 	
-	document.getElementById(win[0]).innerHTML = `<img src="/games/tictactoe/tttOw.png" alt="O!">`;
-	document.getElementById(win[1]).innerHTML = `<img src="/games/tictactoe/tttOw.png" alt="O!">`;
-	document.getElementById(win[2]).innerHTML = `<img src="/games/tictactoe/tttOw.png" alt="O!">`;
+	} else if (winner === "X") {
+		document.getElementById(winIDs[0]).innerHTML = `<img src="/games/tictactoe/tttXw.png" alt="X!">`;
+		document.getElementById(winIDs[1]).innerHTML = `<img src="/games/tictactoe/tttXw.png" alt="X!">`;
+		document.getElementById(winIDs[2]).innerHTML = `<img src="/games/tictactoe/tttXw.png" alt="X!">`;
+	}
+	
 }
