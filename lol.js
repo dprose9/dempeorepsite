@@ -3,7 +3,5 @@ function urmomFunc() {
 }
 
 function boomFunc() {
-	document.write("<p style='font-size:100px; text-align:center;'>
-				BOOM
-			</p>")
+	document.write("<p style='font-size:100px; text-align:center;'>BOOM</p>")
 }
