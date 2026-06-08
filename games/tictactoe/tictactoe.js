@@ -1,3 +1,13 @@
+const tttStat = [
+		["A", "B", "C"],
+		["D", "E", "F"],
+		["G", "H", "I"]
+		];
+let win = "A";
+
+const winIDs = ["ID", "ID", "ID"];
+
+
 function tictactoeFunc() {
 	document.getElementById("tictactoeid").innerHTML = 
 		`<body>
@@ -12,15 +22,53 @@ function tictactoeFunc() {
 			</div>
 			<div style="display:flex; justify-content:center;">	
 				<img src="/games/tictactoe/tttBv.png" alt=":)">
+				<span  id="ttt00">
+					<button class="pic" onclick="tttOFunc("ttt00")">
+						<img src="/games/tictactoe/tttB.png" alt="?">
+					</button>
+				</span>
+				<img src="/games/tictactoe/tttV.png" alt=":)">
+				<span  id="ttt01">
+					<button class="pic" onclick="tttOFunc("ttt01")">
+						<img src="/games/tictactoe/tttB.png" alt="?">
+					</button>
+				</span>
+				<img src="/games/tictactoe/tttV.png" alt=":)">
+				<span  id="ttt02">
+					<button class="pic" onclick="tttOFunc("ttt02")">
+						<img src="/games/tictactoe/tttB.png" alt="?">
+					</button>
+				</span>
+				<img src="/games/tictactoe/tttBv.png" alt=":)">
+			</div>
+			<div style="display:flex; justify-content:center;">	
+				<img src="/games/tictactoe/tttHs.png" alt=":)">
+				<img src="/games/tictactoe/tttH.png" alt=":)">
+				<img src="/games/tictactoe/tttC.png" alt=":)">
+				<img src="/games/tictactoe/tttH.png" alt=":)">
+				<img src="/games/tictactoe/tttC.png" alt=":)">
+				<img src="/games/tictactoe/tttH.png" alt=":)">
+				<img src="/games/tictactoe/tttHs.png" alt=":)">
+			</div>
+			<div style="display:flex; justify-content:center;">	
+				<img src="/games/tictactoe/tttBv.png" alt=":)">
+				<span  id="ttt10">
+					<button class="pic" onclick="tttOFunc("ttt10")">
+						<img src="/games/tictactoe/tttB.png" alt="?">
+					</button>
+				</span>
+				<img src="/games/tictactoe/tttV.png" alt=":)">
 				<span  id="ttt11">
 					<button class="pic" onclick="tttOFunc("ttt11")">
 						<img src="/games/tictactoe/tttB.png" alt="?">
 					</button>
 				</span>
 				<img src="/games/tictactoe/tttV.png" alt=":)">
-				<img src="/games/tictactoe/tttB.png" alt="?">
-				<img src="/games/tictactoe/tttV.png" alt=":)">
-				<img src="/games/tictactoe/tttB.png" alt="?">
+				<span  id="ttt12">
+					<button class="pic" onclick="tttOFunc("ttt12")">
+						<img src="/games/tictactoe/tttB.png" alt="?">
+					</button>
+				</span>
 				<img src="/games/tictactoe/tttBv.png" alt=":)">
 			</div>
 			<div style="display:flex; justify-content:center;">	
@@ -34,29 +82,23 @@ function tictactoeFunc() {
 			</div>
 			<div style="display:flex; justify-content:center;">	
 				<img src="/games/tictactoe/tttBv.png" alt=":)">
-				<img src="/games/tictactoe/tttB.png" alt="?">
+				<span  id="ttt20">
+					<button class="pic" onclick="tttOFunc("ttt20")">
+						<img src="/games/tictactoe/tttB.png" alt="?">
+					</button>
+				</span>
 				<img src="/games/tictactoe/tttV.png" alt=":)">
-				<img src="/games/tictactoe/tttB.png" alt="?">
+				<span  id="ttt21">
+					<button class="pic" onclick="tttOFunc("ttt21")">
+						<img src="/games/tictactoe/tttB.png" alt="?">
+					</button>
+				</span>
 				<img src="/games/tictactoe/tttV.png" alt=":)">
-				<img src="/games/tictactoe/tttB.png" alt="?">
-				<img src="/games/tictactoe/tttBv.png" alt=":)">
-			</div>
-			<div style="display:flex; justify-content:center;">	
-				<img src="/games/tictactoe/tttHs.png" alt=":)">
-				<img src="/games/tictactoe/tttH.png" alt=":)">
-				<img src="/games/tictactoe/tttC.png" alt=":)">
-				<img src="/games/tictactoe/tttH.png" alt=":)">
-				<img src="/games/tictactoe/tttC.png" alt=":)">
-				<img src="/games/tictactoe/tttH.png" alt=":)">
-				<img src="/games/tictactoe/tttHs.png" alt=":)">
-			</div>
-			<div style="display:flex; justify-content:center;">	
-				<img src="/games/tictactoe/tttBv.png" alt=":)">
-				<img src="/games/tictactoe/tttB.png" alt="?">
-				<img src="/games/tictactoe/tttV.png" alt=":)">
-				<img src="/games/tictactoe/tttB.png" alt="?">
-				<img src="/games/tictactoe/tttV.png" alt=":)">
-				<img src="/games/tictactoe/tttB.png" alt="?">
+				<span  id="ttt22">
+					<button class="pic" onclick="tttOFunc("ttt22")">
+						<img src="/games/tictactoe/tttB.png" alt="?">
+					</button>
+				</span>
 				<img src="/games/tictactoe/tttBv.png" alt=":)">
 			</div>
 			<div style="display:flex; justify-content:center;">
@@ -74,5 +116,70 @@ function tictactoeFunc() {
 }
 
 function tttOFunc(tttID) {
+	let xx = tttID[3];
+	let yy = tttID[4];
+	let x = parseInt(xx);
+	let y = parseInt(yy);
+	
 	document.getElementById(tttID).innerHTML = `<img src="/games/tictactoe/tttO.png" alt="O">`;
+	
+	tttStat[x][y] = "O";
+	tttWinFunc("O");
+}
+
+
+function tttWinFunc(Player) {
+	
+	for (let i = 0; i<3; i++) {
+		if ((tttStat[i][0] === tttStat[i][1]) &&
+			(tttStat[i][1] === tttStat[i][2])) {
+			
+			win[0] = "ttt" + i + 0;
+			win[1] = "ttt" + i + 1;
+			win[2] = "ttt" + i + 2;
+			
+			
+		}	
+		if ((tttStat[0][i] === tttStat[1][i]) &&
+			(tttStat[1][i] === tttStat[2][i])) {
+			
+			win[0] = "ttt" + 0 + i;
+			win[1] = "ttt" + 1 + i;
+			win[2] = "ttt" + 2 + i;
+			
+		}
+	}
+	
+	if ((tttStat[0][0] === tttStat[1][1]) &&
+		(tttStat[1][1] === tttStat[2][2])) {
+	
+		win[0] = "ttt" + 0 + 0;
+		win[1] = "ttt" + 1 + 1;
+		win[2] = "ttt" + 2 + 2;
+	
+	}
+	if ((tttStat[0][2] === tttStat[1][1]) &&
+		(tttStat[1][1] === tttStat[2][0])) {
+		
+		win[0] = "ttt" + 0 + 2;
+		win[1] = "ttt" + 1 + 1;
+		win[2] = "ttt" + 2 + 0;
+		
+	}
+}
+
+function tttEndFunc() {
+	blankst = "ttt"
+	for (let i = 0; i<3; i++) {
+		for (let j = 0; j<3; j++) {
+			if (tttStat[i][j] != "O" || tttStat[i][j] != "X") {
+				blankst = "ttt" + i + j;
+				document.getElementById(blankst).innerHTML = `<img src="/games/tictactoe/tttB.png" alt="?">`;
+			}
+		}
+	}
+	
+	document.getElementById(win[0]).innerHTML = `<img src="/games/tictactoe/tttOw.png" alt="O!">`;
+	document.getElementById(win[1]).innerHTML = `<img src="/games/tictactoe/tttOw.png" alt="O!">`;
+	document.getElementById(win[2]).innerHTML = `<img src="/games/tictactoe/tttOw.png" alt="O!">`;
 }
