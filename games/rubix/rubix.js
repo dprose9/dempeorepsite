@@ -1,13 +1,14 @@
 
 function rubixInit() {
 	document.getElementById("rubixID").innerHTML =
-		`<body justify-content:center;>
+		`<body style="justify-content:center;">
 			<style>
 				.box {
 					width: 100px;
 					height: 100px;
 					display: inline-block;
 					border: 8px solid #000000;
+					vertical-align: top;
 				}
 			</style>
 
