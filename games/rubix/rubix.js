@@ -23,3 +23,4 @@ function rubixInit() {
 		</body>`
 	
 	document.getElementById("rubixbutt").innerHTML = "Reset Rubix Cube";
+}
