@@ -27,7 +27,7 @@ function tictactoeFunc() {
 										&nbsp&nbsp&nbsp&nbsp╷&nbsp&nbsp&nbsp╷&nbsp&nbsp&nbsp&nbsp<br>
 										&nbsp&nbsp&nbsp&nbsp│&nbsp&nbsp&nbsp│&nbsp&nbsp&nbsp&nbsp<br>
 										╶───┼───┼───╴<br>
-										&nbsp&nbsp&nbsp&nbsp│&nbsp&nbsp&nbsp│&nbsp&nbsp&nbsp&nbsp<br>
+										&nbsp&nbsp&nbsp&nbsp│<img src="/games/tictactoe/tttX.png" alt="X" width="40px">│&nbsp&nbsp&nbsp&nbsp<br>
 										╶───┼───┼───╴<br>
 										&nbsp&nbsp&nbsp&nbsp│&nbsp&nbsp&nbsp│&nbsp&nbsp&nbsp&nbsp<br>
 										&nbsp&nbsp&nbsp&nbsp╵&nbsp&nbsp&nbsp╵&nbsp&nbsp&nbsp&nbsp<br>
