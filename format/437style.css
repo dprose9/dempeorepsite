@@ -12,12 +12,19 @@ body {
 }
 
 button {
+	background-color:#AAAAAA;
+	color:#000000;
+	text-decoration:none;
+	font-family:'CodePage437';
+	font-size:15px;
+}
+
+button:hover {
 	background-color:#FFFFFF;
 	color:#000000;
 	text-decoration:none;
 	font-family:'CodePage437';
 	font-size:15px;
-	
 }
 
 iframe {
