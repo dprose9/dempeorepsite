@@ -11,6 +11,14 @@ body {
 	
 }
 
+.fancy-font {
+	background-color:#FFFFFF;
+	color:#000000;
+	text-decoration:none;
+	font-family:'CodePage437';
+	
+}
+
 iframe {
 	border:0;
 	outline:none;
