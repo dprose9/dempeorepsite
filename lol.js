@@ -8,7 +8,7 @@ function boomFunc() {
 					<link rel="stylesheet" href="/format/437style.css">
 					<title>BOOM!!!!!!!</title>
 				</head>
-				<body style="background-color:#AA0000;">
+				<body style="background-color:#AA0000; line-height:100px;">
 					<p style="color:#FFFF55; background-color:#AA5500; font-size:300px; text-align:center;">
 						BOOM!
 					</p>
@@ -18,3 +18,4 @@ function boomFunc() {
 				</body>
 			</html>`)
 }
+
