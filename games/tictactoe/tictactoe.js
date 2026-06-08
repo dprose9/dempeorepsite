@@ -179,7 +179,7 @@ function tttEndFunc(winner) {
 	blankst = "ttt"
 	for (let i = 0; i<3; i++) {
 		for (let j = 0; j<3; j++) {
-			if (tttStat[i][j] != "O" || tttStat[i][j] != "X") {
+			if (tttStat[i][j] != "O" && tttStat[i][j] != "X") {
 				blankst = "ttt" + i + j;
 				document.getElementById(blankst).innerHTML = `<img src="/games/tictactoe/tttB.png" alt="?">`;
 			}
