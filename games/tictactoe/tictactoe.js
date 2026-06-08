@@ -9,6 +9,7 @@ const winIDs = ["ID", "ID", "ID"];
 
 
 function tictactoeFunc() {
+	gameover = 0
 	let k = 0
 	for (let i = 0; i<3; i++) {
 		winIDs[i] = "ID";
