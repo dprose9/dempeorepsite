@@ -12,7 +12,7 @@ function boomFunc() {
 					<p style="color:#FFFF55; background-color:#AA5500; font-size:300px; text-align:center;">
 						BOOM!
 					</p>
-					<p style="color:#FFFFFF; font-size:30px; line-height:0px; text-align:center;">
+					<p style="color:#FFFFFF; font-size:30px; text-align:center;">
 						Oops!&nbsp You 'sploded the site...&nbsp Maybe refresh and try again?
 					</p>
 				</body>
