@@ -5,8 +5,25 @@ const tttStat = [
 		];
 let gameover = 0
 
+let playerchar = 0 
+
 const winIDs = ["ID", "ID", "ID"];
 
+
+function tictactoePick() {
+	document.getElementById("tictactoeid").innerHTML = 
+		`<body>
+			<p style="font-size:40px;">
+				Pick a character:
+			</p>
+			<button style="color:#AA0000; font-size:100px;" onclick="playerchar = 1; tictactoeFunc();">
+				X
+			</button>
+			<button style="color:#0000AA; font-size:100px;" onclick="playerchar = 0; tictactoeFunc();">
+				O
+			</button>
+		</body>`
+}
 
 function tictactoeFunc() {
 	gameover = 0
@@ -33,19 +50,19 @@ function tictactoeFunc() {
 			<div style="display:flex; justify-content:center;">	
 				<img src="/games/tictactoe/tttBv.png" alt=":)">
 				<span  id="ttt00">
-					<button class="pic" onclick="tttOFunc('ttt00')">
+					<button class="pic" onclick="tttPlyrFunc('ttt00')">
 						<img src="/games/tictactoe/tttB.png" alt="?">
 					</button>
 				</span>
 				<img src="/games/tictactoe/tttV.png" alt=":)">
 				<span  id="ttt01">
-					<button class="pic" onclick="tttOFunc('ttt01')">
+					<button class="pic" onclick="tttPlyrFunc('ttt01')">
 						<img src="/games/tictactoe/tttB.png" alt="?">
 					</button>
 				</span>
 				<img src="/games/tictactoe/tttV.png" alt=":)">
 				<span  id="ttt02">
-					<button class="pic" onclick="tttOFunc('ttt02')">
+					<button class="pic" onclick="tttPlyrFunc('ttt02')">
 						<img src="/games/tictactoe/tttB.png" alt="?">
 					</button>
 				</span>
@@ -63,19 +80,19 @@ function tictactoeFunc() {
 			<div style="display:flex; justify-content:center;">	
 				<img src="/games/tictactoe/tttBv.png" alt=":)">
 				<span  id="ttt10">
-					<button class="pic" onclick="tttOFunc('ttt10')">
+					<button class="pic" onclick="tttPlyrFunc('ttt10')">
 						<img src="/games/tictactoe/tttB.png" alt="?">
 					</button>
 				</span>
 				<img src="/games/tictactoe/tttV.png" alt=":)">
 				<span  id="ttt11">
-					<button class="pic" onclick="tttOFunc('ttt11')">
+					<button class="pic" onclick="tttPlyrFunc('ttt11')">
 						<img src="/games/tictactoe/tttB.png" alt="?">
 					</button>
 				</span>
 				<img src="/games/tictactoe/tttV.png" alt=":)">
 				<span  id="ttt12">
-					<button class="pic" onclick="tttOFunc('ttt12')">
+					<button class="pic" onclick="tttPlyrFunc('ttt12')">
 						<img src="/games/tictactoe/tttB.png" alt="?">
 					</button>
 				</span>
@@ -93,19 +110,19 @@ function tictactoeFunc() {
 			<div style="display:flex; justify-content:center;">	
 				<img src="/games/tictactoe/tttBv.png" alt=":)">
 				<span  id="ttt20">
-					<button class="pic" onclick="tttOFunc('ttt20')">
+					<button class="pic" onclick="tttPlyrFunc('ttt20')">
 						<img src="/games/tictactoe/tttB.png" alt="?">
 					</button>
 				</span>
 				<img src="/games/tictactoe/tttV.png" alt=":)">
 				<span  id="ttt21">
-					<button class="pic" onclick="tttOFunc('ttt21')">
+					<button class="pic" onclick="tttPlyrFunc('ttt21')">
 						<img src="/games/tictactoe/tttB.png" alt="?">
 					</button>
 				</span>
 				<img src="/games/tictactoe/tttV.png" alt=":)">
 				<span  id="ttt22">
-					<button class="pic" onclick="tttOFunc('ttt22')">
+					<button class="pic" onclick="tttPlyrFunc('ttt22')">
 						<img src="/games/tictactoe/tttB.png" alt="?">
 					</button>
 				</span>
@@ -125,7 +142,7 @@ function tictactoeFunc() {
 	document.getElementById("tictactoebutt").innerHTML = "Reset Tic Tac Toe";
 }
 
-function tttOFunc(tttID) {
+function tttPlyrFunc(tttID) {
 	let xx = tttID[3];
 	let yy = tttID[4];
 	let x = parseInt(xx);
@@ -136,11 +153,11 @@ function tttOFunc(tttID) {
 	tttStat[x][y] = "O";
 	tttWinFunc("O");
 	if (gameover === 0) { 
-		tttXFunc();
+		tttCompFunc();
 	}
 }
 
-function tttXFunc() {
+function tttCompFunc() {
 	let x = 0;
 	let y = 0;
 	let xID = "ttt";
