@@ -1,4 +1,4 @@
-const tictactoehtm = await fetch("/games/tictactoe.htm").then(r => r.text());
+import { tictactoehtm } from '/urmom.js';
 
 function urmomFunc() {
 	document.getElementById("lolorurmom").innerHTML = "URMOM";
