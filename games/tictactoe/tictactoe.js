@@ -12,7 +12,7 @@ function tictactoeFunc() {
 	for (let i = 0; i<3; i++) {
 		winIDs[i] = "ID";
 		for (let j = 0; j<3; j++) {
-			tttStat[i] = "N" + i;
+			tttStat[i][j] = "N" + i;
 		}
 	}
 	
