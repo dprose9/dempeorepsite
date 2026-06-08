@@ -19,19 +19,30 @@ button {
 	font-size:30px;
 }
 
-button.pic {
-	background-color:#FFFFFF;
-	color:#FFFFFF;
-	text-decoration:none;
-	border:none;
-}
-
 button:hover {
 	background-color:#FFFFFF;
 	color:#000000;
 	text-decoration:none;
 	font-family:'CodePage437';
 	font-size:30px;
+}
+
+button.pic {
+	background-color:#FFFFFF;
+	color:#FFFFFF;
+	text-decoration:none;
+	border:none;
+	border-radius:0px;
+	padding:0px;
+}
+
+button:hover.pic {
+	background-color:#AAAAAA;
+	color:#FFFFFF;
+	text-decoration:none;
+	border:none;
+	border-radius:0px;
+	padding:0px;
 }
 
 iframe {
