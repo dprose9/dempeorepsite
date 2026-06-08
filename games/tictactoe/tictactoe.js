@@ -17,8 +17,12 @@ function tictactoePick() {
 				Pick a character:
 			
 				<button class="change" onclick="playerchar = 1; tictactoeFunc();">
-					<img class="normal" src="/games/tictactoe/tttX.png" alt="X">
-					<img class="hover" src="/games/tictactoe/tttO.png" alt="O">
+					<span class="normal">
+						<img src="/games/tictactoe/tttX.png" alt="X">
+					</span>
+					<span class="hover">
+						<img src="/games/tictactoe/tttO.png" alt="O">
+					</span>
 				</button>
 				<button class="change" onclick="playerchar = 0; tictactoeFunc();">
 					<img class="normal" src="/games/tictactoe/tttO.png" alt="O">
