@@ -146,8 +146,7 @@ function tttWinFunc(Player) {
 			winIDs[0] = "ttt" + i + 0;
 			winIDs[1] = "ttt" + i + 1;
 			winIDs[2] = "ttt" + i + 2;
-			win = tttStat[i][0];
-			tttEndFunc(win);
+			tttEndFunc(Player);
 			
 		}	
 		if ((tttStat[0][i] === tttStat[1][i]) &&
@@ -156,8 +155,7 @@ function tttWinFunc(Player) {
 			winIDs[0] = "ttt" + 0 + i;
 			winIDs[1] = "ttt" + 1 + i;
 			winIDs[2] = "ttt" + 2 + i;
-			win = tttStat[0][i];
-			tttEndFunc(win);
+			tttEndFunc(Player);
 			
 		}
 	}
@@ -168,8 +166,7 @@ function tttWinFunc(Player) {
 		winIDs[0] = "ttt" + 0 + 0;
 		winIDs[1] = "ttt" + 1 + 1;
 		winIDs[2] = "ttt" + 2 + 2;
-		win = tttStat[0][0];
-		tttEndFunc(win);
+		tttEndFunc(Player);
 	
 	}
 	if ((tttStat[0][2] === tttStat[1][1]) &&
@@ -178,8 +175,7 @@ function tttWinFunc(Player) {
 		winIDs[0] = "ttt" + 0 + 2;
 		winIDs[1] = "ttt" + 1 + 1;
 		winIDs[2] = "ttt" + 2 + 0;
-		win = tttStat[0][2];
-		tttEndFunc(win);
+		tttEndFunc(Player);
 		
 	}
 }
