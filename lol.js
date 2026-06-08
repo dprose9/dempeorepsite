@@ -1,3 +1,5 @@
+const tictactoehtm = await fetch("/games/tictactoe.htm").then(r => r.text());
+
 function urmomFunc() {
 	document.getElementById("lolorurmom").innerHTML = "URMOM";
 }
@@ -7,6 +9,7 @@ function boomFunc() {
 				<head>
 					<link rel="stylesheet" href="/format/437style.css">
 					<link rel="icon" sizes="any" href="/icons/faviconexp.ico">
+					<link rel="apple-touch-icon-precomposed" sizes="any" href="/faviconexp.ico">
 					<title>BOOM!!!!!!!</title>
 				</head>
 				<body style="background-color:#AA0000;">
@@ -20,3 +23,7 @@ function boomFunc() {
 			</html>`)
 }
 
+function tictactoeFunc() {
+	document.getElementById("tictactoeid").innerHTML = tictactoehtm;
+	document.getElementById("tictactoebutt").innerHTML = "Reset Tic Tac Toe";
+}
