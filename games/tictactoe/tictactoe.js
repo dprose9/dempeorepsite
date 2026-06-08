@@ -3,6 +3,7 @@ const tttStat = [
 		["N4", "N5", "N6"],
 		["N7", "N8", "N9"]
 		];
+let gameover = 0
 
 const winIDs = ["ID", "ID", "ID"];
 
@@ -133,7 +134,9 @@ function tttOFunc(tttID) {
 	
 	tttStat[x][y] = "O";
 	tttWinFunc("O");
-	tttXFunc();
+	if (gameover === 0) { 
+		tttXFunc();
+	}
 }
 
 function tttXFunc() {
@@ -154,7 +157,6 @@ function tttXFunc() {
 	}
 	tttStat[x][y] = "X";
 	tttWinFunc("X");
-	return 0;
 }
 
 
@@ -199,12 +201,11 @@ function tttWinFunc(Player) {
 		tttEndFunc(Player);
 		
 	} else {
-		return 0;
-	}
 }
 
 function tttEndFunc(winner) {
-	blankst = "ttt"
+	gameover = 1;
+	let blankst = "ttt"
 	for (let i = 0; i<3; i++) {
 		for (let j = 0; j<3; j++) {
 			if (tttStat[i][j] != "O" && tttStat[i][j] != "X") {
