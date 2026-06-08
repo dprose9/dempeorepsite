@@ -13,18 +13,19 @@ const winIDs = ["ID", "ID", "ID"];
 function tictactoePick() {
 	document.getElementById("tictactoeid").innerHTML = 
 		`<body>
-			<p style="font-size:40px;">
+			<p style="font-size:40px; text-align:center;">
 				Pick a character:
+			
+				<button onclick="playerchar = 1; tictactoeFunc();">
+					<img class="normal" src="/games/tictactoe/tttX.png" alt="X">
+					<img class="hover" src="/games/tictactoe/tttO.png" alt="O">
+				</button>
+				<button onclick="playerchar = 0; tictactoeFunc();">
+					<img class="normal" src="/games/tictactoe/tttO.png" alt="O">
+					<img class="hover" src="/games/tictactoe/tttX.png" alt="X">
+					
+				</button>
 			</p>
-			<button style="color:#AA0000; font-size:100px;" onclick="playerchar = 1; tictactoeFunc();">
-				<img class="normal" src="/games/tictactoe/tttX.png" alt="X">
-				<img class="hover" src="/games/tictactoe/tttO.png" alt="O">
-			</button>
-			<button style="color:#0000AA; font-size:100px;" onclick="playerchar = 0; tictactoeFunc();">
-				<img class="normal" src="/games/tictactoe/tttO.png" alt="O">
-				<img class="hover" src="/games/tictactoe/tttX.png" alt="X">
-				
-			</button>
 		</body>`
 }
 
@@ -151,10 +152,19 @@ function tttPlyrFunc(tttID) {
 	let x = parseInt(xx);
 	let y = parseInt(yy);
 	
-	document.getElementById(tttID).innerHTML = `<img src="/games/tictactoe/tttO.png" alt="O">`;
 	
-	tttStat[x][y] = "O";
-	tttWinFunc("O");
+	if (playerchar === 0) {
+		document.getElementById(tttID).innerHTML = `<img src="/games/tictactoe/tttO.png" alt="O">`;
+		
+		tttStat[x][y] = "O";
+		tttWinFunc("O");
+	} else if (playerchar === 1) {
+		document.getElementById(tttID).innerHTML = `<img src="/games/tictactoe/tttX.png" alt="X">`;
+		
+		tttStat[x][y] = "X";
+		tttWinFunc("X");
+	}
+	
 	if (gameover === 0) { 
 		tttCompFunc();
 	}
@@ -164,20 +174,38 @@ function tttCompFunc() {
 	let x = 0;
 	let y = 0;
 	let xID = "ttt";
-	for (let i = 0; i<3; i++) {
-		for (let j = 0; j<3; j++) {
-			if (tttStat[i][j] != "O" && tttStat[i][j] != "X") {
-				x = i;
-				y = j;
-				xID = "ttt" + i + j;
-				document.getElementById(xID).innerHTML = `<img src="/games/tictactoe/tttX.png" alt="X">`;
-				i = 3;
-				break;
+	
+	if (playerchar === 0) {
+		for (let i = 0; i<3; i++) {
+			for (let j = 0; j<3; j++) {
+				if (tttStat[i][j] != "O" && tttStat[i][j] != "X") {
+					x = i;
+					y = j;
+					xID = "ttt" + i + j;
+					document.getElementById(xID).innerHTML = `<img src="/games/tictactoe/tttX.png" alt="X">`;
+					i = 3;
+					break;
+				}
 			}
 		}
+		tttStat[x][y] = "X";
+		tttWinFunc("X");
+	} else if (playerchar === 1) {
+		for (let i = 0; i<3; i++) {
+			for (let j = 0; j<3; j++) {
+				if (tttStat[i][j] != "O" && tttStat[i][j] != "X") {
+					x = i;
+					y = j;
+					xID = "ttt" + i + j;
+					document.getElementById(xID).innerHTML = `<img src="/games/tictactoe/tttO.png" alt="O">`;
+					i = 3;
+					break;
+				}
+			}
+		}
+		tttStat[x][y] = "O";
+		tttWinFunc("O");
 	}
-	tttStat[x][y] = "X";
-	tttWinFunc("X");
 }
 
 
