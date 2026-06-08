@@ -24,13 +24,13 @@ function boomFunc() {
 function tictactoeFunc() {
 	document.getElementById("tictactoeid").innerHTML = `<body>
 									<p style="font-size:40px; text-align:center;">
-										&nbsp&nbsp╷&nbsp╷&nbsp&nbsp<br>
-										&nbsp&nbsp│&nbsp│&nbsp&nbsp<br>
-										╶─┼─┼─╴<br>
-										&nbsp&nbsp│&nbsp│&nbsp&nbsp<br>
-										╶─┼─┼─╴<br>
-										&nbsp&nbsp│&nbsp│&nbsp&nbsp<br>
-										&nbsp&nbsp╵&nbsp╵&nbsp&nbsp<br>
+										&nbsp&nbsp&nbsp╷&nbsp&nbsp╷&nbsp&nbsp&nbsp<br>
+										&nbsp&nbsp&nbsp│&nbsp&nbsp│&nbsp&nbsp&nbsp<br>
+										╶──┼──┼──╴<br>
+										&nbsp&nbsp&nbsp│&nbsp&nbsp│&nbsp&nbsp&nbsp<br>
+										╶──┼──┼──╴<br>
+										&nbsp&nbsp&nbsp│&nbsp&nbsp│&nbsp&nbsp&nbsp<br>
+										&nbsp&nbsp&nbsp╵&nbsp&nbsp╵&nbsp&nbsp&nbsp<br>
 										
 									</p>
 								</body>`
