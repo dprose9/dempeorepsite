@@ -143,6 +143,7 @@ function tttXFunc() {
 			if (tttStat[i][j] != "O" && tttStat[i][j] != "X") {
 				xID = "ttt" + i + j;
 				document.getElementById(xID).innerHTML = `<img src="/games/tictactoe/tttX.png" alt="X">`;
+				i = 3;
 				break;
 			}
 		}
