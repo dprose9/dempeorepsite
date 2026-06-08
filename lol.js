@@ -1,3 +1,3 @@
 function urmomFunc() {
-	document.getElementById("urmomid").innerHTML = "URMOM";
+	document.getElementById("lolorurmom").innerHTML = "URMOM";
 }
