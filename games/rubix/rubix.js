@@ -1,7 +1,7 @@
 
 function rubixInit() {
-	document.getElementById("tictactoeid").innerHTML =
-		`<body>
+	document.getElementById("rubixID").innerHTML =
+		`<body justify-content:center;>
 			<style>
 				.box {
 					width: 100px;
@@ -14,3 +14,5 @@ function rubixInit() {
 				<span class="box" style="background-color:#AA0000;"></span>
 			</div>
 		</body>`
+	
+	document.getElementById("rubixbutt").innerHTML = "Reset Rubix Cube";
