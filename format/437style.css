@@ -47,20 +47,20 @@ button:hover.pic {
 
 
 
-button.normal {
+button.change.normal {
 	background-color:#AAAAAA;
 	color:#000000;
 	text-decoration:none;
 	font-family:'CodePage437';
 	font-size:30px;
 }
-button:hover.normal {
+button.change:hover.normal {
 	display:none;
 }
-button.hover {
+button.change.hover {
 	display:none;
 }
-button:hover.hover {
+button.change:hover.hover {
 	display:inline;
 }
 
