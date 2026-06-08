@@ -13,7 +13,7 @@ function tictactoeFunc() {
 			<div style="display:flex; justify-content:center;">	
 				<img src="/games/tictactoe/tttBv.png" alt=":)">
 				<span  id="ttt11">
-					<button class="pic" onclick="tttOFunc()">
+					<button class="pic" onclick="tttOFunc("ttt11")">
 						<img src="/games/tictactoe/tttB.png" alt="?">
 					</button>
 				</span>
@@ -73,6 +73,6 @@ function tictactoeFunc() {
 	document.getElementById("tictactoebutt").innerHTML = "Reset Tic Tac Toe";
 }
 
-function tttOFunc() {
-	document.getElementById("ttt11").innerHTML = `<img src="/games/tictactoe/tttO.png" alt="O">`;
+function tttOFunc(tttID) {
+	document.getElementById(tttID).innerHTML = `<img src="/games/tictactoe/tttO.png" alt="O">`;
 }
