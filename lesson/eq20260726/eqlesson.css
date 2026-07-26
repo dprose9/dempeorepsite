@@ -1,0 +1,63 @@
+@font-face {
+	font-family: 'TimesNewRoman';
+	src: url('times.ttf') format('truetype');	
+}
+
+body {
+	background-color:#000000;
+	color:#FFFFFF;
+	text-decoration:none;
+	font-family:'TimesNewRoman';
+	
+}
+
+
+iframe {
+	border:0;
+	outline:none;
+	height:30px;
+}
+
+a:link {
+	color:#0000AA;
+	text-decoration:none;
+}
+
+a:visited {
+	color:#AA00AA;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#000000 !important;
+	text-decoration:none !important;
+	background-color:#AAAAAA !important;
+}
+
+a:active{
+	color:#0000AA !important;
+	text-decoration:none !important;
+	background-color:#AAAAAA !important;
+}
+
+/*
+DOS COLOR HEX CODE REFERENCE:
+	DARK COLORS:
+		BLACK:      #000000
+		DK-BLUE:    #0000AA
+		DK-TRQS:    #00AAAA
+		DK-GREEN:   #00AA00
+		DK-MGNTA:   #AA00AA
+		DK-RED:     #AA0000
+		ORNG/BRWN:  #AA5500
+		LT-GREY:    #AAAAAA
+	LIGHT COLORS:	
+		DK-GREY:    #555555
+		LT-BLUE:    #5555FF
+		LT-TRQS:    #55FFFF
+		LT-GREEN:   #55FF55
+		LT-MGNTA:   #FF55FF
+		LT-RED:     #FF5555
+		YELLOW:     #FFFF55
+		WHITE:      #FFFFFF
+*/
